@@ -109,8 +109,8 @@ class ViewController: NSViewController {
                         "content_src_id_sets": [[
                             "content_src_ids": [[
                                 "src_id_to_mux": [
-                                    "audio_src_ids": [dmcInfo["quality"]["audios"].arrayValue.sorted(by: {$0["bitrate"] > $1["bitrate"]}).first!["id"].stringValue],
-                                    "video_src_ids": [dmcInfo["quality"]["videos"].arrayValue.sorted(by: {$0["bitrate"] > $1["bitrate"]}).first!["id"].stringValue],
+                                    "audio_src_ids": [dmcInfo["quality"]["audios"].arrayValue.filter({ $0["available"].boolValue }).sorted(by: {$0["bitrate"] > $1["bitrate"]}).first!["id"].stringValue],
+                                    "video_src_ids": [dmcInfo["quality"]["videos"].arrayValue.filter({ $0["available"].boolValue }).sorted(by: {$0["bitrate"] > $1["bitrate"]}).first!["id"].stringValue],
                                 ]
                             ]]
                         ]],
