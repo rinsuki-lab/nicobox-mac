@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Fuzi (2.0.2)
+  - SwiftyJSON (4.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Fuzi (~> 2.0.0)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Fuzi
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Fuzi: a890c1b79058033e1dcc7e14f9a62e0936e728ef
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+
+PODFILE CHECKSUM: 0281e8829379f16af9db5be321e12548fec1eabe
+
+COCOAPODS: 1.5.3
